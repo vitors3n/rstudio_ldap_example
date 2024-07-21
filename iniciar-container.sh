@@ -1,5 +1,8 @@
 #!/bin/bash
 docker run -d -p 8787:8787 \
+--restart always \
+--memory 64000m \
+--memory-swap 64000m \
 -e BASE="dc=example,dc=org" \
 -e URI="ldap://example.log" \
 -e BIND_DN="cn=admin,dc=example,dc=org" \
