@@ -14,8 +14,6 @@ RUN apt-get util-linux libdevil-dev libcurl4-openssl-dev \
     libgdal-dev libproj-dev gdebi-core libmagick++-dev libgmp-dev \
     libmpfr-dev libgsl-dev
 
-RUN R -e "install.packages('BiocManager')"
-
 COPY iniciar_rstudio.sh /root/iniciar_rstudio.sh
 RUN chmod +x /root/iniciar_rstudio.sh
 
