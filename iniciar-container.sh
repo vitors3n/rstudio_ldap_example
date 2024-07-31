@@ -1,6 +1,6 @@
 #!/bin/bash
 docker run -d -p 8787:8787 \
---hostname rstudio-exemplo
+--hostname rstudio-exemplo \
 --restart always \
 --memory 64000m \
 --memory-swap 64000m \
